@@ -14,6 +14,6 @@ Plugin 'honza/vim-snippets'
 Plugin 'majutsushi/tagbar'                              " a vim plugin that displays tags in a window
 
 " Latex features
-Plugin 'LaTeX-Box-Team/LaTeX-Box'
+Plugin 'lervag/vimtex'
 
 call vundle#end()
