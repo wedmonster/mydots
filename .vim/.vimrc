@@ -33,6 +33,10 @@ set shiftwidth=4
 set smarttab
 set expandtab
 
+
+" vim spell-checker
+set spell spelllang=en_us
+
 " powerline
 let g:Powerline_symbols="fancy"
 set rtp+=$POWERLINE_HOME/bindings/vim
@@ -77,6 +81,12 @@ function! UpdateSkim(status)
         call system(join(l:cmd + [line('.'), shellescape(l:out), shellescape(l:tex)], ' '))
     endif
 endfunction
+
+" NERD commenter
+let g:NERDCustomDelimiters = {'tex':{'left': '%'}}
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+
 
 " Keybindings for plugin toggle
 nmap <F6> :NERDTreeToggle<cr>

@@ -13,6 +13,7 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'majutsushi/tagbar'                              " a vim plugin that displays tags in a window
 Plugin 'easymotion/vim-easymotion'                      " a motion plugin for fast navigating a file
+Plugin 'scrooloose/nerdcommenter'                       " a plugin for easy-commenting
 
 " Latex features
 Plugin 'lervag/vimtex'
