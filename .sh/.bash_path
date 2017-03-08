@@ -2,5 +2,7 @@
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="~/bin:$PATH"
 export PATH="/usr/X11/bin:$PATH"
-export PATH="/Applications/MATLAB_R2016a.app/bin:$PATH"
+export PATH="/Applications/MATLAB_R2016b.app/bin:$PATH"
 export PATH="/opt/local/bin:$PATH"
+export POWERLINE_HOME="/usr/local/lib/python2.7/site-packages/powerline"
+

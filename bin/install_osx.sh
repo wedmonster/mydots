@@ -50,6 +50,17 @@ else
     echo "dircolors is already installed. checking the version:"
 fi
 
+echo "install oh-my-zsh"
+which -s zsh
+if [[ $? != 0 ]]; then
+    brew install zsh zsh-completions
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+else
+    echo "zsh is already installed. checking the version:"
+    zsh --version
+fi
+chsh -s $(which -s zsh)
+
 ## Install modules
 echo "install modules for osx"
 echo "list: powerline"
@@ -78,12 +89,13 @@ sudo cp .powerline/powerline.conf $POWERLINE_HOME/bindings/tmux # powerline.conf
 echo "install .dir_colors"
 cp -r ./.dir_colors ~/
 
-# install bash configurations
-echo "install bash configurations"
-cp .bash/.bash_profile ~/.bash_profile
-cp .bash/.bash_aliases ~/.bash_aliases
-cp .bash/.bash_path ~/.bash_path
-source ~/.bash_profile
+# install sh configurations
+echo "install sh configurations (bash, zsh (default))"
+cp .sh/.bash_profile ~/.bash_profile
+cp .sh/.bash_aliases ~/.bash_aliases
+cp .sh/.bash_path ~/.bash_path
+cp .sh/.zshrc ~/.zshrc
+zsh source ~/.zshrc
 
 # install tmux configuration
 echo "install tmux configuration"
@@ -98,3 +110,7 @@ ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
 echo "install powerline configuration"
 cp -r .powerline/* ~/.config/powerline
 powerline-daemon -r
+
+# install ctag configuration
+echo "install ctag configuration"
+cp .ctags ~/.ctags
