@@ -58,16 +58,21 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+. ~/.bash_aliases
 fi
 
 if [ -f ~/.bash_path ]; then
-    . ~/.bash_path
+. ~/.bash_path
 fi 
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export set EDITOR=vim
+
+eval `dircolors ~/.dir_colors/dircolors.ansi-universal`
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -95,3 +100,5 @@ export set EDITOR=vim
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+

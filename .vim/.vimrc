@@ -1,6 +1,6 @@
 
 source ~/.vim/bundles.vim
-filetype plugin on 
+filetype plugin indent on 
 
 " encoding detection
 set fileencodings=utf-8
@@ -23,7 +23,7 @@ set number                                          " show line numbers
 set showmatch                                       " show matching bracket
 set matchtime=2                                     " show matching breakat for 0.2 seconds
 set title                                           " show file in titlebar
-set nowrap											" don't wrap line
+set wrap											" don't wrap line
 
 set autoindent
 set smartindent                                     " indent when
@@ -32,7 +32,6 @@ set softtabstop=4
 set shiftwidth=4
 set smarttab
 set expandtab
-
 
 " vim spell-checker
 set spell spelllang=en_us
@@ -50,7 +49,12 @@ let g:NERDTreeDirArrowCollapsible = '▾'				" change default arrows
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif       " close vim if the only left window is NERDTree
 
 " Omni completion setting
+let g:acp_enableAtStartup = 0                       " Disable AutoComplPop.
 set omnifunc=syntaxcomplete#Complete
+let g:neocomplete#enable_at_startup = 1             " Use neocomplete.
+let g:neocomplete#enable_smart_case = 1             " Use smartcase
+let g:neocomplete#sources#syntax#min_keyword_length = 3 " Set minimum syntax keyword length.
+
 
 " TagBar setting
 let g:tagbar_left=1

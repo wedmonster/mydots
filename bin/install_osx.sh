@@ -95,6 +95,7 @@ cp .sh/.bash_profile ~/.bash_profile
 cp .sh/.bash_aliases ~/.bash_aliases
 cp .sh/.bash_path ~/.bash_path
 cp .sh/.zshrc ~/.zshrc
+cp .sh/spaceship.zsh ~/.oh-my-zsh/themes/spaceship.zsh-theme
 zsh source ~/.zshrc
 
 # install tmux configuration
