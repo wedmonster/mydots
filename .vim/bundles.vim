@@ -7,7 +7,7 @@ call vundle#begin()
 " IDE features
 Plugin 'scrooloose/nerdtree' 							" a tree explorer plugin for vim
 "Plugin 'vim-scripts/AutoComplPop'                      " too slow            
-Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/neocomplete.vim'                         " faster than AutoComplPop
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
@@ -17,7 +17,7 @@ Plugin 'majutsushi/tagbar'                              " a vim plugin that disp
 Plugin 'easymotion/vim-easymotion'                      " a motion plugin for fast navigating a file
 Plugin 'scrooloose/nerdcommenter'                       " a plugin for easy-commenting
 Plugin 'xolox/vim-misc'                                 " for vim-easytags
-Plugin 'xolox/vim-easytags'                             " Automated tag file generation and syntax highlighting of tags in Vim
+"Plugin 'xolox/vim-easytags'                            " deprecated - automated tag file generation and syntax highlighting of tags in Vim
 Plugin 'tmhedberg/matchit'                              " extended % matching for HTML, LaTeX, and many other languages
 
 

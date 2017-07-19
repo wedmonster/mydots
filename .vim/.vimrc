@@ -91,6 +91,8 @@ let g:NERDCustomDelimiters = {'tex':{'left': '%'}}
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
+" autocmd
+autocmd BufWritePost * execute ':silent ! if [ -e tags ]; then ctags -R --exclude=@.ctagsignore . > /dev/null 2>&1; fi'
 
 " Keybindings for plugin toggle
 nmap <F6> :NERDTreeToggle<cr>
