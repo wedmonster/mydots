@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/cpu.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/cpu.h
 sys/types.h
 -
 
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/graph.cc
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/graph.cc
 string
 -
 cstring
 -
 graph.h
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/graph.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/graph.h
 
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/graph.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/graph.h
 string
 -
 
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/load.cc
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/load.cc
 sstream
 -
 string
@@ -34,19 +34,19 @@ cmath
 sys/types.h
 -
 cpu.h
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/cpu.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/cpu.h
 load.h
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/load.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/load.h
 luts.h
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/luts.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/luts.h
 
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/load.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/load.h
 string
 -
 
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/luts.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/luts.h
 
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/main.cc
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/main.cc
 cstring
 -
 iostream
@@ -62,31 +62,31 @@ cstdlib
 getopt.h
 -
 version.h
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/version.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/version.h
 graph.h
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/graph.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/graph.h
 luts.h
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/luts.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/luts.h
 cpu.h
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/cpu.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/cpu.h
 memory.h
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/memory.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/memory.h
 load.h
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/load.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/load.h
 
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common/memory.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common/memory.h
 string
 -
 
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/osx/cpu.cc
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/osx/cpu.cc
 mach/mach.h
 -
 unistd.h
 -
 cpu.h
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/osx/cpu.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/osx/cpu.h
 
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/osx/memory.cc
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/osx/memory.cc
 string
 -
 sstream
@@ -96,11 +96,11 @@ mach/mach.h
 sys/sysctl.h
 -
 memory.h
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/osx/memory.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/osx/memory.h
 luts.h
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/osx/luts.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/osx/luts.h
 conversions.h
-/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/osx/conversions.h
+/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/osx/conversions.h
 
 common/conversions.h
 

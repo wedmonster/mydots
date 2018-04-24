@@ -63,17 +63,17 @@ chsh -s $(which -s zsh)
 
 ## Install modules
 echo "install modules for osx"
-echo "list: powerline"
+#echo "list: powerline"
 
 # install powerline-status
-echo "install powerline-status"
-IS_INSTALLED=$(pip show powerline-status | grep powerline-status | wc -l)
-if [ $IS_INSTALLED < 1 ]; then
-    sudo pip install https://github.com/Lokaltog/powerline/tarball/develop
-else
-    echo "powerline-status is already installed. chkecing the version:"
-    pip show powerline-status | grep powerline-status
-fi
+#echo "install powerline-status"
+#IS_INSTALLED=$(pip show powerline-status | grep powerline-status | wc -l)
+#if [ $IS_INSTALLED < 1 ]; then
+#    sudo pip install https://github.com/Lokaltog/powerline/tarball/develop
+#else
+#    echo "powerline-status is already installed. chkecing the version:"
+#    pip show powerline-status | grep powerline-status
+#fi
 
 # install tmux-mem-cpu-load
 echo "install tmux-mem-cpu-load"
@@ -82,8 +82,9 @@ cd .tmux/vendor/tmux-mem-cpu-load
 cmake .
 make
 make install
-cd $MPWD
-sudo cp .powerline/powerline.conf $POWERLINE_HOME/bindings/tmux # powerline.conf is modified for tmux-mem-cpu-load
+cd "$MPWD"
+
+#sudo cp .powerline/powerline.conf $POWERLINE_HOME/bindings/tmux # powerline.conf is modified for tmux-mem-cpu-load
 
 # install dir_colors
 echo "install .dir_colors"
@@ -96,7 +97,7 @@ cp .sh/.bash_aliases ~/.bash_aliases
 cp .sh/.bash_path ~/.bash_path
 cp .sh/.zshrc ~/.zshrc
 cp .sh/spaceship.zsh ~/.oh-my-zsh/themes/spaceship.zsh-theme
-zsh source ~/.zshrc
+source ~/.zshrc
 
 # install tmux configuration
 echo "install tmux configuration"
@@ -106,11 +107,12 @@ if [ -f ~/.tmux.conf ]; then
     rm ~/.tmux.conf
 fi
 ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
+cp ~/.tmux/.tmux.conf.local ~/.tmux.conf.local
 
 # install powerline-status configuration
-echo "install powerline configuration"
-cp -r .powerline/* ~/.config/powerline
-powerline-daemon -r
+#echo "install powerline configuration"
+#cp -r .powerline/* ~/.config/powerline
+#powerline-daemon -r
 
 # install ctag configuration
 echo "install ctag configuration"

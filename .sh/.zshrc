@@ -1,8 +1,9 @@
+#!/bin/zsh
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Jinhong/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -53,16 +54,18 @@ ZSH_THEME="bureau"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+
+#echo "sourcing oh-my-zsh!! in $SHELL"
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-if [ -f ~/.bash_aliases ]; then
-. ~/.bash_aliases
+if [ -f $HOME/.bash_aliases ]; then
+    source $HOME/.bash_aliases
 fi
 
-if [ -f ~/.bash_path ]; then
-. ~/.bash_path
+if [ -f $HOME/.bash_path ]; then
+    source $HOME/.bash_path
 fi 
 
 export LC_ALL=en_US.UTF-8

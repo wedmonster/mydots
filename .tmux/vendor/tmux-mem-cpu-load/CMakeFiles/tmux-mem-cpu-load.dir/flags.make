@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -Os -DNDEBUG
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load -I/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/common 
+CXX_INCLUDES = -I/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load -I/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/common 
 

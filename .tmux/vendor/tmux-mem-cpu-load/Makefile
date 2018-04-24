@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.5.0/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load
+CMAKE_SOURCE_DIR = /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load
+CMAKE_BINARY_DIR = /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,17 +87,6 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/3.5.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
 
 # Special rule for the target install
 install: preinstall
@@ -135,9 +124,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -686,7 +675,6 @@ help:
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
-	@echo "... install/strip"
 	@echo "... ContinuousCoverage"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousBuild"

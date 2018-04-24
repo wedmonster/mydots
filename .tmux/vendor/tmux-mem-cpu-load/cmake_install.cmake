@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load
+# Install script for directory: /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -28,13 +28,7 @@ if(NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/tmux-mem-cpu-load")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/tmux-mem-cpu-load" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/tmux-mem-cpu-load")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/tmux-mem-cpu-load")
-    endif()
-  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/tmux-mem-cpu-load")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +39,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

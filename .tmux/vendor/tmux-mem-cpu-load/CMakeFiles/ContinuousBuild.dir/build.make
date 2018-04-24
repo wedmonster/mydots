@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.5.0/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load
+CMAKE_SOURCE_DIR = /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load
+CMAKE_BINARY_DIR = /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load
 
 # Utility rule file for ContinuousBuild.
 
@@ -71,6 +71,6 @@ CMakeFiles/ContinuousBuild.dir/clean:
 .PHONY : CMakeFiles/ContinuousBuild.dir/clean
 
 CMakeFiles/ContinuousBuild.dir/depend:
-	cd /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/ContinuousBuild.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/ContinuousBuild.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ContinuousBuild.dir/depend
 

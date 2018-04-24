@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load
-BuildDirectory: /Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load
+SourceDirectory: /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load
+BuildDirectory: /Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: JungJinhongs-MacBook-Pro.local
+Site: iMac
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Darwin-c++
@@ -33,7 +33,7 @@ ScpCommand: /usr/bin/scp
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/local/Cellar/cmake/3.5.0/bin/cmake" "/Users/Jinhong/myconf/.tmux/vendor/tmux-mem-cpu-load"
+ConfigureCommand: "/usr/local/Cellar/cmake/3.5.0/bin/cmake" "/Users/Jinhong/mydots/.tmux/vendor/tmux-mem-cpu-load"
 MakeCommand: /usr/local/Cellar/cmake/3.5.0/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
@@ -46,7 +46,7 @@ CVSCommand: CVSCOMMAND-NOTFOUND
 CVSUpdateOptions: -d -A -P
 
 # Subversion options
-SVNCommand: /usr/bin/svn
+SVNCommand: /usr/local/bin/svn
 SVNOptions: 
 SVNUpdateOptions: 
 
